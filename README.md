@@ -13,19 +13,19 @@ You can view a live version of this mobile-optimized project here:
 
 ## Loom Video Recording Mobile View (HTML)
 A video walkthrough and demonstration focusing on the HTML structure can be found here:
-.[Live Video](https://www.loom.com/share/2af31b683b9c4e16882bb9168551cecd?sid=1921efa5-f326-4772-80dc-0252e8ff57bf).
+.[Live Video](https://www.loom.com/share/a9d2d86c825a4a64b2e487d91b83f8e8).
 
 ***
 
 ## Loom Video Recording Mobile View (CSS)
 A video walkthrough and demonstration focusing on the responsive CSS styling can be found here:
-.[Live Video](https://www.loom.com/share/2af31b683b9c4e16882bb9168551cecd?sid=1921efa5-f326-4772-80dc-0252e8ff57bf).
+.[Live Video](https://www.loom.com/share/c8ef74fb36fe406a8a5286943bab4d38).
 
 ***
 
 ## Loom Video Recording Mobile View (JS)
 A video walkthrough and demonstration focusing on the responsive CSS styling can be found here:
-.[Live Video](https://www.loom.com/share/2af31b683b9c4e16882bb9168551cecd?sid=1921efa5-f326-4772-80dc-0252e8ff57bf).
+.[Live Video](https://www.loom.com/share/7f4e5e27d6ac4157a78d8e89794bc775).
 
 ***
 
