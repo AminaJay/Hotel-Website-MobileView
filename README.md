@@ -1,7 +1,7 @@
 # Hotel-Website-MobileView
 
 ## Project Description
-This is a responsive landing page, optimized for mobile view, for a hotel booking and accommodation website. The site features a prominent hero banner for apartment searching, showcases special offers, highlights customer reviews, and provides recent blog posts. The primary goal is to provide a clean, intuitive, and highly functional experience for users viewing on smartphones.
+This is a responsive landing page, for a mobile view hotel booking and accommodation website. The site features a prominent hero banner for apartment searching, showcases special offers, highlights customer reviews, and provides recent blog posts. The primary goal is to provide a clean, intuitive, and highly functional experience for users viewing on smartphones.
 
 ***
 
