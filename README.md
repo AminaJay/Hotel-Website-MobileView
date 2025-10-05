@@ -6,7 +6,7 @@ This is a responsive landing page, for a mobile view hotel booking and accommoda
 ***
 
 ## Render Link Mobile View
-You can view a live version of this mobile-optimized project here:
+You can view a live version of this mobile project here:
 [Live Demo](https://hotel-website-mobileview-n9nm.onrender.com)
 
 ***
@@ -24,13 +24,13 @@ A video walkthrough and demonstration focusing on the responsive CSS styling can
 ***
 
 ## Loom Video Recording Mobile View (JS)
-A video walkthrough and demonstration focusing on the responsive CSS styling can be found here:
+A video walkthrough and demonstration focusing on the responsive JS styling can be found here:
 .[Live Video](https://www.loom.com/share/7f4e5e27d6ac4157a78d8e89794bc775).
 
 ***
 
 ## Installation
-This is a static website built with HTML and CSS. To view it, simply open the index.html file in your web browser. For the best experience, view it using a browser's mobile device simulator.
+This is a static website built with HTML CSS and JS. To view it, simply open the index.html file in your web browser. For the best experience, view it using a browser's mobile device simulator.
 
 ***
 
