@@ -1,0 +1,708 @@
+/* Defines a set of custom properties (variables) for consistent colors across the site */
+:root {
+    --red: #EE685F; /* Main red color */
+    --white: #FFFFFF; /* Main white color */
+    --blue: #2A90D9; /* Main blue color */
+    --black: #262729; /* Main black color */
+    --light-gray: #f8f8f8; /* Background color for the footer */
+    --divider-gray: #ddd; /* Color for the horizontal divider line */
+    --hover-red: #d15a52; /* Color for hover state on red buttons */
+}
+
+/* Basic body styles */
+body {
+    margin: 0; /* Removes default body margin */
+    font-family: 'Montserrat', sans-serif; /* Sets the primary font family */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Styles for the main header at the top of the page */
+.main-header {
+    position: absolute; /* Positions the header relative to the viewport, over the banner */
+    top: 0; /* Aligns the header to the top of the page */
+    left: 0; /* Aligns the header to the left of the page */
+    width: 100%; /* Makes the header span the full width of the viewport */
+    z-index: 20; /* Ensures the header is above most other elements */
+}
+
+/* Styles for the navigation hero banner section */
+.banner-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Semi-transparent overlay on the banner image */
+.banner-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+/* Styles for the banner main heading  */
+.banner-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    color: var(--black);
+}
+
+/* Styles for the banner paragraph text  */
+.banner-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+
+/* Styles for the navigation bar within the header */
+.nav-bar {
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: space-between; /* Distributes items with space between them */
+    align-items: center; /* Vertically centers the items */
+    padding: 1rem 1.5rem; /* Adds padding to the top, bottom, and sides */
+}
+
+/* Common styles for the logo */
+.logo {
+    font-size: 2rem; /* Sets the font size for the logo text */
+    font-weight: 700; /* Makes the logo text bold */
+}
+
+/* Specific color for the "Your." part of the logo */
+.logo .your {
+    color: var(--blue);
+}
+
+/* Specific color for the "Logo" part of the logo */
+.logo .logo {
+    color: var(--red);
+}
+
+/* Shared dimensions for menu and avatar icons */
+.menu-icon, .avatar-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Styles for the hamburger menu button */
+.menu-toggle {
+    background: none; /* Removes any background color */
+    border: none; /* Removes the button border */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    padding: 0; /* Removes padding inside the button */
+}
+
+/* Styles for the image inside the menu toggle button */
+.menu-toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Styles for the hero banner section */
+.banner {
+    position: relative; /* Allows child elements to be positioned relative to this container */
+    width: 100%; /* Full width */
+    height: 100vh; /* Takes up the full viewport height */
+    background: url('Rectangle_5.png') no-repeat center center/cover; /* Sets the background image */
+    display: flex; /* Uses Flexbox */
+    flex-direction: column; /* Arranges children vertically */
+    justify-content: flex-end; /* Aligns children to the bottom */
+    align-items: flex-start; /* Aligns children to the start (left) */
+    color: var(--white); /* Sets text color to white */
+    padding: 2rem 1.5rem; /* Adds padding */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Semi-transparent overlay on the banner image */
+.banner-overlay {
+    position: absolute; /* Positions the overlay on top of the banner */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Darkens the image */
+    z-index: 1; /* Puts the overlay between the background image and the text */
+}
+
+/* Ensures banner text and search bar are on top of the overlay */
+.banner-text, .search-bar {
+    position: relative;
+    z-index: 2;
+}
+
+/* Styles for the banner's main heading */
+.banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+/* Styles for the banner's paragraph text */
+.banner-text p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+/* Styles for the search bar */
+.search-bar {
+    background-color: var(--white);
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Styles for the location input wrapper */
+.location-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styles for the text wrapper inside the input */
+.input-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles for the "Where" text */
+.input-text span {
+    font-size: 0.8rem;
+    color: var(--black);
+    font-weight: 500;
+}
+
+/* Styles for the search input field itself */
+.input-text input {
+    border: none; /* Removes the input border */
+    outline: none; /* Removes the outline on focus */
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+    background: transparent;
+}
+
+/* Styles for the circular search icon button */
+.search-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--red);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the image inside the search icon */
+.search-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* --- Styles for the mobile side menu --- */
+.nav-menu {
+    position: fixed; /* Fixes the menu in the viewport */
+    top: 0;
+    left: 0;
+    width: 80%; /* Menu takes up 80% of the screen width */
+    height: 100%; /* Takes up the full viewport height */
+    background-color: var(--white);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    transform: translateX(-100%); /* Hides the menu by moving it off-screen to the left */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the slide effect */
+    z-index: 100; /* Puts the menu on top of everything */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Class that slides the menu into view */
+.nav-menu.active {
+    transform: translateX(0);
+}
+
+/* Header within the side menu */
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--divider-gray);
+}
+
+/* Close menu button */
+.close-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Image inside the close menu button */
+.close-menu img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Navigation links list */
+.nav-links {
+    list-style: none; /* Removes default list bullets */
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Individual list item in the navigation */
+.nav-links li {
+    margin: 15px 0;
+}
+
+/* Navigation links */
+.nav-links a {
+    text-decoration: none; /* Removes underline */
+    color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Container for currency and language options */
+.menu-options {
+    margin-top: auto; /* Pushes the element to the bottom of the container */
+    display: flex;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Specific styling for currency and language text */
+.currency, .language {
+    color: var(--red);
+    text-decoration: underline; /* Adds underline */
+    text-decoration-style: dotted; /* Makes the underline dotted */
+    cursor: pointer;
+}
+
+/* Container for social icons in the menu */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+/* Styles for the images of the social icons */
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* --- Styles for main content sections (common) --- */
+.why-choose-us, .special-offers, .reviews-section, .recent-posts {
+    padding: 3rem 1.5rem; /* Adds consistent padding to all main sections */
+    text-align: center; /* Centers the content */
+}
+
+/* Common heading styles for all main sections */
+.why-choose-us h2, .special-offers h2, .reviews-section h2, .recent-posts h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+.why-choose-us h2 { margin-bottom: 1rem;}
+
+/* Description text in the "Why Choose Us" section */
+.why-choose-us .section-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+/* Common container for dynamic cards in all sections */
+.why-choose-us .cards-container, .special-offers .cards-container, .reviews-section .cards-container, .recent-posts .cards-container {
+    display: flex; /* Uses Flexbox */
+    flex-direction: column; /* Stacks cards vertically */
+    gap: 2rem; /* Adds space between cards */
+}
+.why-choose-us .cards-container { gap: 3rem; } /* Adds extra space for this section */
+
+/* --- Styles for "Why Choose Us" cards --- */
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.icon-circle img {
+    width: 40px;
+    height: 40px;
+}
+
+.feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+/* --- Styles for "Special Offers" cards --- */
+.offer-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures image and rounded corners work correctly */
+    text-align: left;
+}
+
+/* Container for the image, positioned relative so children can be placed absolutely on top of it */
+.offer-card .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.offer-card .offer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    display: block;
+}
+
+/* Container for the rating and favorite icons, positioned absolutely over the image */
+.offer-card .icon-overlay {
+    position: absolute; /* Positions the overlay on top of the parent .image-container */
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between; /* Aligns the first item to the left and the last to the right */
+    align-items: center;
+    z-index: 5; /* This ensures icons are in front of the image */
+}
+
+
+/* Content area within the offer card */
+.offer-card .content {
+    padding: 1rem 1rem 1.5rem;
+}
+
+.offer-card h3 {
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: var(--black);
+    margin: 0;
+}
+
+.offer-card .dates {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--black);
+    margin: 0.5rem 0 1rem;
+}
+
+/* Wrapper for the price text */
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+/* The larger price amount text */
+.price .amount {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+/* The smaller "/6 night" text */
+.price .per-night {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+/* --- Styles for the "Reviews" Section --- */
+.reviews-section .cards-container {
+    margin-bottom: 2rem;
+}
+
+.review-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.reviewer-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+}
+
+.review-card .review-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.reviewer-info {
+    font-size: 0.875rem;
+}
+
+.reviewer-info .name {
+    font-weight: 600;
+    color: var(--black);
+}
+
+.reviewer-info .title {
+    font-style: italic;
+    color: var(--black);
+}
+
+.more-reviews-button {
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+}
+
+.more-reviews-button:hover {
+    background-color: var(--hover-red);
+}
+
+/* --- Styles for "Recent Posts" Section --- */
+.post-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.post-card .post-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.post-card .content {
+    padding: 1rem 1.5rem 1.5rem;
+}
+
+.post-card .post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.post-card .post-meta .read-time {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--blue);
+}
+
+.post-card .post-meta .read-time img {
+    width: 16px;
+    height: 16px;
+}
+
+.post-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0 0 0.5rem;
+}
+
+.post-card .post-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--black);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* --- Styles for the Footer Section --- */
+.main-footer {
+    background-color: var(--light-gray);
+    padding: 3rem 1.5rem 1.5rem;
+    color: var(--black);
+    text-align: left;
+}
+
+/* Styles for each of the three footer sections */
+.footer-section {
+    margin-bottom: 2rem;
+}
+
+/* Styles for the heading of each footer section */
+.footer-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Styles for the paragraph text in each footer section */
+.footer-section p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+/* Styles for the newsletter subscription section */
+.newsletter-section {
+    margin-bottom: 2rem;
+}
+
+/* Styles for the newsletter section heading */
+.newsletter-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Container for the email input field and button */
+.email-input-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 50px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Styles for the email input field */
+.email-input-container input {
+    flex-grow: 1; /* Allows the input to take up available space */
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 1rem;
+    font-size: 0.875rem;
+    color: var(--black);
+}
+
+/* Styles for the send button */
+.send-button {
+    background-color: var(--red);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styles for the image inside the send button */
+.send-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Styles for the horizontal divider line */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--divider-gray);
+    margin: 2rem 0;
+}
+
+/* Container for the bottom part of the footer */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+/* Styles for the logo in the footer */
+.footer-bottom .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Container for social media icons */
+.footer-social-icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Styles for the social media icon images */
+.footer-social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Styles for the design credit text */
+.design-credit {
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+/* Styles for the regular text part ("Design by")*/
+.design-credit p span {
+    color: var(--black);
+}
+
+/* Styles for the link within the design credit */
+.design-credit .delvig-link {
+    color: var(--blue);
+    text-decoration: underline;
+}
